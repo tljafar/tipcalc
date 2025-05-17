@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif; /* Updated to use font variable */
+}
+
+@layer base {
+  :root {
+    --background: 240 60% 97%; /* Light Lavender #E6E6FA */
+    --foreground: 261 35% 25%; /* Dark Purple #45385E */
+
+    --card: 240 50% 94%; /* Slightly darker lavender #EDEAF7 */
+    --card-foreground: 261 35% 25%; /* Dark Purple */
+
+    --popover: 240 50% 94%;
+    --popover-foreground: 261 35% 25%;
+
+    --primary: 261 74% 64%; /* Vibrant Purple #9B5DE5 */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 261 60% 85%; /* Lighter Purple #D4C9F5 */
+    --secondary-foreground: 261 35% 25%; /* Dark Purple */
+
+    --muted: 240 40% 90%; /* Muted Lavender #E2E0EE */
+    --muted-foreground: 261 30% 45%; /* Muted Dark Purple #685F7A */
+
+    --accent: 325 87% 67%; /* Fuchsia Pink #F15BB5 */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 261 50% 80%; /* Border color #C6BBEB */
+    --input: 261 50% 88%; /* Input background/border #DDD6F3 */
+    --ring: 325 87% 67%; /* Fuchsia Pink for focus rings */
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables can remain or be updated if sidebar is used */
+    --sidebar-background: 240 60% 96%; /* Slightly off main background */
+    --sidebar-foreground: 261 35% 25%;
+    --sidebar-primary: 261 74% 64%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 325 87% 67%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 261 50% 80%;
+    --sidebar-ring: 325 87% 67%;
+  }
+
+  .dark {
+    --background: 261 20% 12%; /* Dark deep purple #1C1825 */
+    --foreground: 240 40% 90%; /* Light lavender #DBDAE9 */
+
+    --card: 261 20% 18%; /* Slightly lighter dark purple #2A2535 */
+    --card-foreground: 240 40% 90%;
+
+    --popover: 261 20% 18%;
+    --popover-foreground: 240 40% 90%;
+
+    --primary: 261 74% 64%; /* Vibrant Purple #9B5DE5 */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 261 50% 40%; /* Muted mid-purple #5D4B8C */
+    --secondary-foreground: 0 0% 100%; /* White */
+
+    --muted: 261 20% 25%; /* Dark muted purple #3A334A */
+    --muted-foreground: 240 30% 70%; /* Lighter muted lavender #A8A5C0 */
+
+    --accent: 325 87% 67%; /* Fuchsia Pink #F15BB5 */
+    --accent-foreground: 0 0% 100%; /* White */
+    
+    --destructive: 0 70% 50%; /* Darker red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 261 20% 30%; /* Darker border #453E59 */
+    --input: 261 20% 22%;  /* Darker input background #332E41 */
+    --ring: 325 87% 70%; /* Slightly lighter pink #F372C0 */
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    /* Sidebar variables for dark mode */
+    --sidebar-background: 261 20% 10%; /* Even darker for sidebar */
+    --sidebar-foreground: 240 40% 90%;
+    --sidebar-primary: 261 74% 64%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 325 87% 67%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 261 20% 25%;
+    --sidebar-ring: 325 87% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

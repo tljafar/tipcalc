@@ -7,6 +7,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeToggle } from "@/components/theme-toggle";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -38,6 +40,8 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <Toaster />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

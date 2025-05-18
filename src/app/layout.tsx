@@ -18,6 +18,9 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "TipSplit - Calculate and Split Bills Easily",
   description: "A simple app to calculate tips and split the bill among friends.",
+  verification : {
+    google: "HSWaghhsP9BhiPMuSD4c6vmCyL7Audd4NTjkSCuav0E",
+  }
 };
 
 export default function RootLayout({
